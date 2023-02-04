@@ -1,0 +1,18 @@
+{
+  "name": "annao-website-2023",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm run build:11ty && pnpm run build:tw",
+    "build:11ty": "ELEVENTY_PRODUCTION=true eleventy",
+    "build:tw": "NODE_ENV=production tailwindcss -i tailwind.css -c tailwind.config.js -o _site/style.css",
+    "start": "pnpm run start:11ty & pnpm run start:tw",
+    "start:11ty": "eleventy --serve",
+    "start:tw": "tailwindcss -i tailwind.css -c tailwind.config.js -o _site/style.css --watch"
+  },
+  "author": "Jason and Anna O'Neil",
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "dependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "tailwindcss": "^3.2.4"
+  }
+}

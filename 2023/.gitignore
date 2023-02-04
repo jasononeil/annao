@@ -1,0 +1,9 @@
+# NPM ecosystem things
+node_modules
+.pnpm-debug.log
+
+# Eleventy generated files
+_site/
+
+# Mac stuff
+.DS_Store
