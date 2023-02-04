@@ -1,0 +1,56 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+	min-height: 100%;
+}
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.site-menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 300px;
+}
+.site-content {
+	position: absolute;
+	left: 300px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: url("http://static.wixstatic.com/media/2ae321_8350b690e7d241d9b5f94e607ac8df2f.jpg_srz_p_1348_899_75_22_0.50_1.20_0.00_jpg_srz");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+h1 {
+	font-size: 90px;
+	color: rgb(127, 108, 62);
+	background: -webkit-linear-gradient(rgb(127, 108, 62), rgb(202, 172, 99));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	font-family: "MB Noir";
+	font-variant: normal;
+	font-weight: 900;
+	letter-spacing: -3px;
+	white-space: nowrap;
+}
+
+.strip {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+}
