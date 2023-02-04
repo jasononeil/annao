@@ -5,6 +5,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./styles/tailwind.css");
   eleventyConfig.addWatchTarget("./_site/styles.css");
 
+  eleventyConfig.addPassthroughCopy({
+    "./fonts": "./fonts",
+  });
+
   eleventyConfig.addShortcode("version", function () {
     return now;
   });
