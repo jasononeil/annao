@@ -1,0 +1,103 @@
+---
+layout: layout.liquid
+title: Anna O Music
+---
+
+<div class="h-screen">
+  <section class="h-slide w-full overflow-hidden bg-hero-image bg-cover bg-bottom">
+    <h1 class="p-6 font-serif text-2xl lg:text-4xl text-center uppercase bg-kelp text-white">Anna O</h1>
+
+  </section>
+  <section class="bg-white p-1">
+    <menu class="flex flex-col gap-1 md:grid md:grid-cols-2 lg:grid-cols-3 h-full">
+      <li>
+        {% include "iconButton", label: "Play on Spotify", iconName: "spotify", link: "https://open.spotify.com/artist/7MNF0ytQ3FGKbj710RGNF4?si=6ukyg85NQeelLTZjkseajQ" %}
+      </li>
+      <li>
+        {% include "iconButton", label: "Watch on YouTube", iconName: "youtube", link: "https://www.youtube.com/user/annaomusic" %}
+      </li>
+      <li>
+        {% include "iconButton", label: "Play on Apple Music", iconName: "apple", link: "https://music.apple.com/us/artist/anna-o/872202053" %}
+      </li>
+      <li>
+        {% include "iconButton", label: "Play on SoundCloud", iconName: "soundcloud", link: "https://soundcloud.com/annaomusic" %}
+      </li>
+      <li>
+        {% include "iconButton", label: "Follow on Instagram", iconName: "instagram", link: "https://soundcloud.com/annaomusic" %}
+      </li>
+      <li>
+        {% include "iconButton", label: "Follow on Facebook", iconName: "facebook", link: "https://www.facebook.com/annaomusic" %}
+      </li>
+    </menu>
+  </section>
+  <section class="min-h-slide flex flex-col items-center justify-center text-center bg-kelp p-12">
+    <h2 class="col-span-2 font-serif text-3xl lg:text-6xl text-center uppercase text-white">
+      New single
+      <span class="block text-6xl lg:text-9xl">"We've Got Time"</span>
+      out Feb 24th
+    </h2>
+    <a href="https://li.sten.to/annao-wgt" class="text-xl lg:text-3xl mt-20 p-5 bg-falcon hover:bg-roman-coffee focus-visible:bg-roman-coffee text-white">Pre-save</a>
+  </section>
+  <section class="min-h-half-slide p-3 md:p-10 lg:p-20 flex items-center bg-falcon">
+    <iframe
+      class="md:h-slide"
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/7MNF0ytQ3FGKbj710RGNF4?utm_source=generator&theme=0"
+      width="100%"
+      height="100%"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      title="Spotify Player"
+      loading="lazy"></iframe>
+  </section>
+  <section class="min-h-slide flex flex-col md:flex-row gap-6 p-6 bg-kelp">
+    <div class="md:flex-1 flex items-center justify-center">
+      <h2 class="sr-only">Bio</h2>
+      <img
+        src="./img/anna-o-profile.jpg"
+        alt="Profile photo of Anna O"
+        width="300"
+        height="300"
+        class="rounded-full aspect-square">
+    </div>
+    <div class="md:flex-1 flex flex-col items-center justify-center text-lg text-white overflow-y-auto">
+    <p class="mb-6 max-w-lg">
+      Perth/Boorloo-based electro pop artist, Anna O, has continuously captivated the hearts of Australians throughout her career with her illustrious sound since the release of her debut EP back in 2015. Anna O'Neil's place within the industry has not gone unnoticed. She has supported national acts like Tash Sultana and Thelma Plum and her previous releases have seen a variety of support on Triple J, Triple J Unearthed, and Tone Deaf as well as landing a number of TV placements, including a spot on the Australian television show Wentworth.
+      </p>
+      <p class="mb-6 max-w-lg">
+        Now, O'Neil captures a period of her life, managing life as a mother of two with birth trauma, postnatal depression, physical disability and the undiagnosed neurodivergence of both herself and her young children, and working together with her partner to rebuild life for their family after a tumultuous few years.
+      </p>
+      <p class="mb-6 max-w-lg">
+        Anna O's upcoming releases are produced by Luke Minness (PRISCILLA, Have A Good Day, Yes Lenny), this musical partnership has led to one of the most productive years of her life and "We&rsquo;ve Got Time" is the first release of many now in the pipeline. Relish in the enchanting soundscape and tones of Anna O as 2023 unfolds.
+      </p>
+    </p>
+    </div>
+  </section>
+  <section class="min-h-slide flex items-center justify-center text-center bg-washed-acovado">
+    <img
+      src="img/anna-o-4.jpg"
+      alt="Black and white portrait of Anna sitting on a chair, facing the camera, on a large white photo set sheet in a garden setting"
+      class="w-full min-h-slide object-cover">
+  </section>
+  <!--
+  <iframe
+  class="h-slide w-[100%] bg-kelp"
+  src="https://www.youtube-nocookie.com/embed/7CmaZtTSB9E"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
+  --><section class="min-h-slide p-6 flex flex-col gap-2 items-center justify-center bg-washed-avocado">
+    <h2 class="font-serif text-3xl lg:text-6xl text-center uppercase">
+      Mailing List
+    </h2>
+    <p>Join the mailing list to be the first to hear about new music and new shows.</p>
+    <form name="Mailing list signup" class="mt-12" netlify>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="name@example.com" class="p-4 border-roman-coffee border-2 rounded-md">
+
+      <button type="submit" class="p-4 border-roman-coffee border-2 rounded-md bg-roman-coffee text-white">Join</button>
+    </form>
+  </section>
+</div>
