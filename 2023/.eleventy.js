@@ -1,4 +1,4 @@
-const now = String(Date.now());
+const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./styles/tailwind.config.js");
@@ -7,9 +7,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "./fonts": "./fonts",
+    "./img": "./img",
   });
 
-  eleventyConfig.addShortcode("version", function () {
-    return now;
+  eleventyConfig.addShortcode("icon", function (icon) {
+    return fs.readFileSync(`./icons/${icon}.svg`);
   });
 };
