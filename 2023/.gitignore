@@ -4,6 +4,3 @@ node_modules
 
 # Eleventy generated files
 _site/
-
-# Mac stuff
-.DS_Store
